@@ -19,7 +19,7 @@ class Post(models.Model):
         'image', blank=True
     )
     like = models.IntegerField(
-        'like_count', default=0, blank=True
+        'like_count', default=0, blank=True, null=True
     )
 
 

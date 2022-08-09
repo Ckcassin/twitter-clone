@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import Post
 from .forms import PostForm
 from django.forms import forms
+from cloudinary.forms import cl_init_js_callbacks
 
 def index(request):
     # If the method is POST
